@@ -54,7 +54,6 @@ const Header = () => {
               <Link
                 href={link.path}
                 onClick={() => handleNavClick(`${link.path}`)}
-                scroll={false}
               >
                 {link.label}
               </Link>
