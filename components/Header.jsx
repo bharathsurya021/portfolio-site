@@ -2,10 +2,17 @@
 import React, { useState } from "react";
 import { links } from "../lib/data";
 import Link from "next/link";
-
+const smoothScroll = (target) => {
+  const element = document.querySelector(target);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
-
+  const handleNavClick = (target) => {
+    smoothScroll(target);
+  };
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
@@ -44,7 +51,11 @@ const Header = () => {
               key={link.path}
               className="text-gray-900 hover:text-blue-400 transition font-medium"
             >
-              <Link href={link.path} scroll={false}>
+              <Link
+                href={link.path}
+                onClick={() => handleNavClick(`${link.path}`)}
+                scroll={false}
+              >
                 {link.label}
               </Link>
             </li>
