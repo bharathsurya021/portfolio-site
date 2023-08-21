@@ -12,13 +12,7 @@ const Header = () => {
 
   return (
     <header className="z-[999] fixed flex items-center justify-between px-4 md:px-12 h-20 w-full border-white border-opacity-40 bg-white bg-opacity-30 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] ">
-      <Link
-        href={"/"}
-        onClick={(e) => {
-          e.preventDefault();
-        }}
-        className="font-bold text-2xl tracking-widest "
-      >
+      <Link href={"/"} className="font-bold text-2xl tracking-widest ">
         DEV<span className="text-orange-600">N</span>
         <span className="text-blue-600">UX</span>
       </Link>
@@ -50,12 +44,7 @@ const Header = () => {
               key={link.path}
               className="text-gray-900 hover:text-blue-400 transition font-medium"
             >
-              <Link
-                href={link.path}
-                onClick={(e) => {
-                  e.preventDefault();
-                }}
-              >
+              <Link href={link.path} scroll={false}>
                 {link.label}
               </Link>
             </li>
