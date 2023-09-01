@@ -29,9 +29,9 @@ export default function Intro() {
         </p>
       </div>
       <div className="space-y-4 flex items-center flex-col sm:flex-row sm:space-x-8  sm:space-y-0">
-        <button className="bg-gray-900 text-md sm:text-xl font-normal text-white shadow-md py-2 px-4 rounded-md">
+        {/* <button className="bg-gray-900 text-md sm:text-xl font-normal text-white shadow-md py-2 px-4 rounded-md">
           <Link href={"#contact"}>Get In Touch</Link>
-        </button>
+        </button> */}
         <button className="bg-gray-900 text-md sm:text-xl font-normal text-white shadow-md py-2 px-4 rounded-md">
           <Link href={"/resume.pdf"} target="_blank" rel="noopener noreferrer">
             View Resume
