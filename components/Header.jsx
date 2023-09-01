@@ -9,21 +9,21 @@ const smoothScroll = (target) => {
   }
 };
 const Header = () => {
-  const [showMenu, setShowMenu] = useState(false);
-  const handleNavClick = (target) => {
-    smoothScroll(target);
-  };
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
+  // const [showMenu, setShowMenu] = useState(false);
+  // const handleNavClick = (target) => {
+  //   smoothScroll(target);
+  // };
+  // const toggleMenu = () => {
+  //   setShowMenu(!showMenu);
+  // };
 
   return (
-    <header className="z-[999] fixed flex items-center justify-between px-4 md:px-12 h-20 w-full border-white border-opacity-40 bg-white bg-opacity-30 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] ">
+    <header className="z-[999] fixed flex items-center justify-between px-4 md:px-12 h-16 w-full border-white border-opacity-40 bg-white bg-opacity-30 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] ">
       <Link href={"/"} className="font-bold text-2xl tracking-widest ">
         DEV<span className="text-orange-600">N</span>
         <span className="text-blue-600">UX</span>
       </Link>
-      <nav>
+      {/* <nav>
         <button className="md:hidden" onClick={toggleMenu}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ const Header = () => {
             </li>
           ))}
         </ul>
-      </nav>
+      </nav> */}
     </header>
   );
 };

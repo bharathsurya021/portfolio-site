@@ -6,8 +6,8 @@ export const Skills = () => {
       id="skills"
       className="max-w-[53rem] scroll-mt-28 text-center space-y-8"
     >
-      <h2 className="text-2xl font-semibold">Skills</h2>
-      <ul className="flex flex-wrap justify-center gap-4 text-lg text-gray-900  ">
+      <h2 className="text-xl sm:text-2xl font-semibold">Skills</h2>
+      <ul className="flex flex-wrap justify-center gap-4  text-md sm:text-lg text-gray-900  ">
         {skillsData.map((skill, index) => {
           return (
             <li

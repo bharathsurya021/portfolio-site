@@ -12,7 +12,7 @@ export default function Expereince() {
       id="exp"
       className="flex flex-col  w-full justify-center items-center space-y-8  p-4  scroll-mt-20"
     >
-      <h2 className="text-2xl font-semibold">Experience</h2>
+      <h2 className="text-xl sm:text-2xl font-semibold">Experience</h2>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => {
           return (

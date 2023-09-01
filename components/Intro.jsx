@@ -15,7 +15,7 @@ export default function Intro() {
         />
       </div>
       <div className="w-full md:w-[80%] lg:w-[50%]">
-        <p className="text-xl md:text-2xl xl:text-3xl ">
+        <p className="text-md sm:text-xl md:text-2xl  ">
           Hello! I'm<span className="font-bold text-blue-400"> Bharath</span>,
           {" a"}
           <span className="font-bold text-blue-400">
@@ -28,11 +28,11 @@ export default function Intro() {
           technology.
         </p>
       </div>
-      <div className="space-y-8 flex items-center flex-col sm:flex-row sm:space-x-8  sm:space-y-0">
-        <button className="bg-gray-900 text-xl font-normal text-white shadow-md py-2 px-4 rounded-md">
+      <div className="space-y-4 flex items-center flex-col sm:flex-row sm:space-x-8  sm:space-y-0">
+        <button className="bg-gray-900 text-md sm:text-xl font-normal text-white shadow-md py-2 px-4 rounded-md">
           <Link href={"#contact"}>Get In Touch</Link>
         </button>
-        <button className="bg-gray-900 text-xl font-normal text-white shadow-md py-2 px-4 rounded-md">
+        <button className="bg-gray-900 text-md sm:text-xl font-normal text-white shadow-md py-2 px-4 rounded-md">
           <Link href={"/resume.pdf"} target="_blank" rel="noopener noreferrer">
             View Resume
           </Link>

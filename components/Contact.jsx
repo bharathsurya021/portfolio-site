@@ -8,9 +8,9 @@ export default function Contact() {
       id="contact"
       className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center space-y-8"
     >
-      <h2 className="text-2xl font-semibold">Contact me</h2>
+      <h2 className="text-xl sm:text-2xl font-semibold">Contact me</h2>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
+      <p className="text-md sm:text-xl text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
         <Link className="underline font-bold" href="mailto:bharath@gmail.com">
           bharathsurya021@gmail.com
@@ -24,21 +24,21 @@ export default function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedin className="text-[3rem] text-gray-600 hover:text-blue-600 transition" />
+          <FaLinkedin className="text-[1.5rem] sm:text-[3rem] text-gray-600 hover:text-blue-600 transition" />
         </Link>
         <Link
           href="https://github.com/bharathsurya021"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub className="text-[3rem] text-gray-600 hover:text-blue-800 transition" />
+          <FaGithub className="text-[1.5rem] sm:text-[3rem] text-gray-600 hover:text-blue-800 transition" />
         </Link>
         <Link
           href="https://www.behance.net/bharathsurya"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaBehance className="text-[3rem] text-gray-600 hover:text-blue-700 transition" />
+          <FaBehance className="text-[1.5rem] sm:text-[3rem] text-gray-600 hover:text-blue-700 transition" />
         </Link>
       </div>
     </section>
