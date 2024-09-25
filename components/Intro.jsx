@@ -22,7 +22,7 @@ export default function Intro() {
             {" "}
             Full Stack Developer
           </span>{" "}
-          with 2 years of experience. I also do{" "}
+          with 3 years of experience. I also do{" "}
           <span className="font-bold text-orange-400">UI/UX design</span> for my
           projects. I'm a passionate problem solver who loves working with
           technology.
